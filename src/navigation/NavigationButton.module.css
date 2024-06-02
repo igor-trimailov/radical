@@ -1,0 +1,19 @@
+.container {
+  background-color: #454664;
+}
+
+.button {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: rgb(103, 156, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(103, 156, 246, 1) 0%,
+    rgba(64, 114, 238, 1) 100%
+  );
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 23px;
+  margin-right: -10px;
+}

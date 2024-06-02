@@ -1,0 +1,9 @@
+.container {
+    height: 100%;
+    display: flex;
+  }
+  
+  .title {
+    color: #0070f3;
+  }
+  

@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "esnext"],
         "target": "ES2022",
         "jsx": "react-jsx",
         "module": "ES2022",
@@ -7,8 +8,8 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
+    "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts", "src/**/*.css"],
     "exclude": ["node_modules"]
 }
