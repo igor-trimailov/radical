@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linkIcon {
+    position: relative;
+    padding: 22px 27px 19px 28px;
+}
+
+.link {
+    position: relative;
+    fill: #B8C5D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    width: 22%;
+    height: 1px;
+    background-color: #E8F0F8;
+}
+
+
+.linkActive {
+    position: relative;
+    background: rgb(103, 156, 246);
+    background: linear-gradient(90deg, rgba(103, 156, 246, 1) 0%, rgba(64, 114, 238, 1) 100%);
+    fill: #FFFFFF;
+    margin-right: -10px;
+    margin-top: -1px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

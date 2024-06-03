@@ -1,9 +1,37 @@
 .container {
     height: 100%;
+    width: 100%;
     display: flex;
+  }
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   .title {
     color: #0070f3;
   }
   
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #454664;
+  }
+
+  .account {
+    background-color: #93B4BC;
+  }
+
+  .content {
+    height: 100%;
+    width: 100%;
+    background-color: #E9EDF6;
+  }
+
+  .logo {
+    max-height: 23px;
+    padding: 20px 0 21px 30px;
+  }
