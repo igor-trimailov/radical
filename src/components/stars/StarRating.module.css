@@ -1,0 +1,10 @@
+.starRating {
+  display: flex;
+  margin-right: 10px;
+}
+
+.star {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  margin-right: 5px;
+}
