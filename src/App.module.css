@@ -21,10 +21,6 @@
   background-color: #454664;
 }
 
-.account {
-  background-color: #93b4bc;
-}
-
 .content {
   height: 100%;
   width: 100%;
@@ -33,7 +29,7 @@
 
 .logo {
   max-height: 23px;
-  padding: 20px 0 21px 30px;
+  padding: 27px 0 27px 30px;
 }
 
 .books {

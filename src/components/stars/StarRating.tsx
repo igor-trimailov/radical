@@ -1,7 +1,7 @@
 import React from 'react';
 import filledStar from '../../assets/star-filled.png';
 import emptyStar from '../../assets/star.png';
-import * as styles from './StarRating.module.css'; // CSS file for styling
+import * as styles from './StarRating.module.css';
 
 interface StarRatingProps {
   rating: number;
@@ -9,7 +9,7 @@ interface StarRatingProps {
 
 const StarRating: React.FC<StarRatingProps> = ({ rating }) => {
   return (
-    <div className={styles.starRating}>
+    <div className={styles.starRating} data-testid="star-rating">
       {Array.from({ length: 5 }, (_, i) => (
         <img
           key={i}

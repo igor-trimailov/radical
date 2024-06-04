@@ -22,7 +22,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|webp)$/,
         use: {
           loader: 'url-loader',
         },
@@ -38,13 +38,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
     }),
     new HotModuleReplacementPlugin(),
     new Dotenv(),
   ],
   devServer: {
     static: path.join(__dirname, 'dist'),
+    historyApiFallback: true,
     compress: true,
     hot: true,
     port: 3000,

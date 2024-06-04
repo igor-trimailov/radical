@@ -1,6 +1,9 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useEffect, ChangeEvent, FormEvent } from 'react';
 import { ReactComponent as SearchIcon } from '../../../public/images/search.svg';
 import * as styles from './SearchInput.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
+import { setSearchTerm, clearSearchTerm } from '../../store/features/search';
 
 interface Props {
   placeholder: string;
@@ -13,16 +16,23 @@ const SearchInput: React.FC<Props> = ({
   buttonText,
   onSearch,
 }) => {
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const dispatch = useDispatch();
+  const searchTerm = useSelector((state: RootState) => state.search.searchTerm);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
+    dispatch(setSearchTerm(event.target.value));
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSearch(searchTerm);
   };
+
+  useEffect(() => {
+    return () => {
+      dispatch(clearSearchTerm());
+    };
+  }, [dispatch, location]);
 
   return (
     <form className={styles.searchForm} onSubmit={handleSubmit}>

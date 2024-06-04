@@ -14,8 +14,10 @@ interface Book {
   publisher: string;
   isbns: ISBN[];
 }
+interface BookWithId extends Book {
+  id: string;
+}
 
-// Define the response structure
 interface BooksApiResponse {
   status: string;
   copyright: string;

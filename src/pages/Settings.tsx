@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../App.module.css'; // Import CSS module
+import * as styles from './Settings.module.css';
 
 const Settings: React.FC = () => {
   return (

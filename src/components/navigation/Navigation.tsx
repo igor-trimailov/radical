@@ -18,7 +18,7 @@ const App: React.FC = () => {
       </NavLink>
 
       <NavLink
-        to={'/favourites'}
+        to={'/favorites'}
         className={({ isActive }) =>
           isActive ? styles.linkActive : styles.link
         }

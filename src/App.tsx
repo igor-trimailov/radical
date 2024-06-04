@@ -3,12 +3,13 @@ import { Outlet } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 import * as styles from './App.module.css';
 import MyImage from '../public/images/radical.png';
+import Avatar from './components/avatar/Avatar';
 
 const App: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
-        <div className={styles.account}>Person</div>
+        <Avatar />
         <Navigation />
       </div>
       <div className={styles.main}>
