@@ -7,7 +7,8 @@ export const booksApi = createApi({
   }),
   endpoints: (builder) => ({
     getBestSellersList: builder.query<BooksApiResponse, NoArg>({
-      query: () => `lists/best-sellers/history.json?api-key=${process.env.API_KEY}`,
+      query: () =>
+        `lists/best-sellers/history.json?api-key=${process.env.API_KEY}`,
     }),
   }),
 });

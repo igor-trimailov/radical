@@ -1,60 +1,60 @@
 .bookList {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #f5f7fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bookItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bookDetails {
-    flex: 1;
-    display: flex;
-    min-width: 0;
+  flex: 1;
+  display: flex;
+  min-width: 0;
 }
 
 .bookIcon {
-    display: flex;
-    flex-shrink: 0;
-    margin-right: 15px;
+  display: flex;
+  flex-shrink: 0;
+  margin-right: 15px;
 }
 
 .bookTitleContainer {
-    min-width: 0;
+  min-width: 0;
 }
 
 .bookTitle {
-    margin-right: 3px;
-    font-weight: bold;
+  margin-right: 3px;
+  font-weight: bold;
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bookAuthor {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .bookPrice {
-    font-weight: bold;
-    margin-right: 5px;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .bookFavourite {
-    cursor: pointer;
+  cursor: pointer;
 }

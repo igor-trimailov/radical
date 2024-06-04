@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from './Navigation.module.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { ReactComponent as ListIcon } from '../../../public/images/list.svg';
 import { ReactComponent as HeartIcon } from '../../../public/images/heart.svg';
 import { ReactComponent as CogIcon } from '../../../public/images/cog.svg';
