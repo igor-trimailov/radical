@@ -1,6 +1,6 @@
 import React from 'react';
+import { expect, it, describe } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import StarRating from './StarRating';
 
 describe('StarRating Component', () => {
@@ -23,9 +23,9 @@ describe('StarRating Component', () => {
 
     stars.forEach((star, index) => {
       if (index < rating) {
-        expect(star).toHaveAttribute('src', 'test-file-stub');
+        expect(star).toHaveAttribute('src', '/src/assets/star-filled.png');
       } else {
-        expect(star).toHaveAttribute('src', 'test-file-stub');
+        expect(star).toHaveAttribute('src', '/src/assets/star.png');
       }
     });
   });

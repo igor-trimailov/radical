@@ -6,9 +6,8 @@ This application is an example app prepared for an interview.
 
 ## Prerequisites
 
--   Node.js (v16 or higher)
--   New York Times API_KEY specified in the .env file
-
+- Node.js (v18)
+- New York Times API_KEY specified in the .env file
 
 ## Installation
 
