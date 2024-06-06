@@ -19,5 +19,6 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
+    '@typescript-eslint/no-var-requires': 'off', // Disable the rule if needed
   },
 };
