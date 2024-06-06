@@ -1,7 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { HotModuleReplacementPlugin } = require('webpack');
-const Dotenv = require('dotenv-webpack');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
 
 module.exports = {
   mode: 'development',
@@ -40,7 +39,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
-    new HotModuleReplacementPlugin(),
     new Dotenv(),
   ],
   devServer: {
