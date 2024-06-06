@@ -1,9 +1,9 @@
 import React from 'react';
 import * as styles from './Navigation.module.css';
 import { NavLink } from 'react-router-dom';
-import { ReactComponent as ListIcon } from '../../../public/images/list.svg';
-import { ReactComponent as HeartIcon } from '../../../public/images/heart.svg';
-import { ReactComponent as CogIcon } from '../../../public/images/cog.svg';
+import ListIcon from '../../assets/list.svg?react';
+import HeartIcon from '../../assets/heart.svg?react';
+import CogIcon from '../../assets/cog.svg?react';
 
 const App: React.FC = () => {
   return (

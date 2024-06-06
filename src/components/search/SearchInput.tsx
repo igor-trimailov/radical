@@ -1,5 +1,5 @@
 import React, { useEffect, ChangeEvent, FormEvent } from 'react';
-import { ReactComponent as SearchIcon } from '../../../public/images/search.svg';
+import SearchIcon from '../../assets/search.svg?react';
 import * as styles from './SearchInput.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../store/store';

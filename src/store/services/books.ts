@@ -9,7 +9,7 @@ export const booksApi = createApi({
   endpoints: (builder) => ({
     getBestSellersList: builder.query<BookWithId[], void>({
       query: () =>
-        `lists/best-sellers/history.json?api-key=${process.env.API_KEY}`,
+        `lists/best-sellers/history.json?api-key=${import.meta.env.VITE_API_KEY}`,
       transformResponse: (response: BooksApiResponse) => {
         // Add a unique ID to each book since api does not have any ids
         return response.results.map((book) => ({

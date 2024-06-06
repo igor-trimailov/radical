@@ -1,6 +1,6 @@
 import React from 'react';
-import { ReactComponent as BookIcon } from '../../../public/images/book.svg';
-import { ReactComponent as FavoriteIcon } from '../../../public/images/heart.svg';
+import BookIcon from '../../assets/book.svg?react';
+import FavoriteIcon from '../../assets/heart.svg?react';
 import * as styles from './BookList.module.css';
 import StarRating from '../stars/StarRating';
 import { useDispatch } from 'react-redux';

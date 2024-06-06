@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation';
 import * as styles from './App.module.css';
-import MyImage from '../public/images/radical.png';
+import MyImage from './assets/radical.png';
 import Avatar from './components/avatar/Avatar';
 
 const App: React.FC = () => {
